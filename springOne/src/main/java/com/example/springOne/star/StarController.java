@@ -1,7 +1,10 @@
 package com.example.springOne.star;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.annotation.Id;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -28,5 +31,17 @@ public class StarController {
     @PostMapping
     public void registerNewStar(@RequestBody Star star){
         starService.addNewStar(star);
+    }
+
+    @DeleteMapping(path ="{starId}")
+    public void deleteStar (@PathVariable("starId") String starId) {
+        starService.deleteStar(starId);
+    }
+
+    @PutMapping(path = "{starId}")
+    public void updateStar(
+            @PathVariable("starId") String starId,
+            @RequestParam(required = false) String email){
+        starService.updateStar(starId, email);
     }
 }
