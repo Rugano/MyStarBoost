@@ -1,0 +1,153 @@
+/* Reset some default styles */
+body, html, div, ul, li, p, h2, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.App {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategrey;
+    padding: 10px 20px;
+}
+
+.App-logo {
+    width: 50px; /* Adjust the width as necessary */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .dropdown-button:hover {
+        background-color: rgba(0, 136, 169, 0.8);
+    }
+
+.dropdown-menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    width: inherit;
+    text-align: left;
+}
+
+    .dropdown-item:hover {
+        background-color: rgba(0, 136, 169, 0.1);
+    }
+
+    .dropdown-item.active {
+        background-color: rgba(0, 136, 169, 0.2);
+    }
+
+.App-main {
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Soft gradient background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 800px; /* Max width for better readability */
+    margin: 20px auto; /* Center align with automatic side margins */
+    text-align: center; /* Center align text */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    margin-bottom: 80px;
+}
+
+    /* Heading styles */
+    .App-main h2 {
+        font-size: 2rem; /* Larger font size */
+        color: #2c3e50; /* Darker color for better contrast */
+        margin-bottom: 10px; /* Space below heading */
+    }
+
+    /* Paragraph styles */
+    .App-main p {
+        font-size: 1.1rem; /* Slightly larger font size */
+        line-height: 1.6; /* Improved line height for readability */
+        color: #34495e; /* Complementary text color */
+        margin-bottom: 20px; /* Space below paragraph */
+    }
+
+    /* Hover effect for main section */
+    .App-main:hover {
+        background: linear-gradient(135deg, #e2ebf5, #b0c6db); /* Slightly darker gradient on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    }
+
+    /* Styles for "Our stars" section */
+    .App-main div {
+        background: white; /* White background for contrast */
+        padding: 15px; /* Padding inside the div */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+        /* Hover effect for "Our stars" section */
+        .App-main div:hover {
+            transform: translateY(-5px); /* Slight lift effect on hover */
+        }
+
+        /* Styles for the stars heading */
+        .App-main div h2 {
+            font-size: 1.5rem; /* Adjusted font size */
+            color: #2c3e50; /* Darker color */
+            margin-bottom: 10px; /* Space below heading */
+        }
+
+
+.App-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: darkslategrey;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+} 
+

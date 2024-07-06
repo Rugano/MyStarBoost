@@ -1,0 +1,9 @@
+nav, li, .link-to-log-in, ul:hover {
+    color: teal;
+    list-style: none;
+}
+
+nav, li, .link-to-log-in, ul {
+    color: teal;
+    list-style: none;
+}

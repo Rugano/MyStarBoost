@@ -1,0 +1,67 @@
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .form-group input {
+        flex: 1;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+.password-input {
+    padding-right: 20px;
+    width: 80%;
+}
+
+.password-toggle-icon {
+    right: 10px;
+    cursor: pointer;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+    .password-toggle-icon:hover {
+        color: #000;
+    }
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    nav, li, .link-to-register, ul:hover {
+        color: teal;
+        list-style:none;
+    }
+
+nav, li, .link-to-register, ul {
+    color: teal;
+    list-style: none;
+}
